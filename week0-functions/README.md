@@ -14,6 +14,6 @@ The detailed problem statements and implementation notes can be found inside the
 * Python 3.x installed (Python Interpreter).
 
 ### Execution Command
-To run any of the scripts, navigate to this directory and execute:
+To run any of the scripts, navigate to the corresponding directory and execute:
 ```bash
 python script_name.py
