@@ -3,7 +3,8 @@
 My personal solutions to Harvard's CS50P course.
 
 > **Course**: CS50's Introduction to Programming with Python  
-> **Institution**: Harvard University / edX  
+> **Institution**: Harvard University / edX
+> **Language**: C++
 > **Link**: https://cs50.harvard.edu/python  
 > **Status**: 🔄 In progress
 
