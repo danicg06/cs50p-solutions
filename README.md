@@ -6,7 +6,7 @@ My personal solutions to Harvard's CS50P course.
 > 
 > **Institution**: Harvard University / edX
 > 
-> **Language**: C++
+> **Language**: Python
 > 
 > **Link**: https://cs50.harvard.edu/python
 > 
