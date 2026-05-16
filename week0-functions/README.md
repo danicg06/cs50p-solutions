@@ -17,3 +17,4 @@ The detailed problem statements and implementation notes can be found inside the
 To run any of the scripts, navigate to the corresponding directory and execute:
 ```bash
 python script_name.py
+```
