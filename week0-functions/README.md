@@ -1,4 +1,4 @@
-# Week 0 — Functions / Variables
+# Week 0 — Functions / Variables 🧩
 
 This folder contains a collection of programming exercises from Week 0 of CS50's Introduction to Programming with Python. 
 
