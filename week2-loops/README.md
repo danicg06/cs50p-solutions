@@ -1,4 +1,4 @@
-# Week 2 — Loops
+# Week 2 — Loops ⟳
 
 This folder contains a collection of programming exercises from Week 2 of CS50's Introduction to Programming with Python. 
 
