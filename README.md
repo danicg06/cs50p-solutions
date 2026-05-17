@@ -2,9 +2,14 @@
 
 My personal solutions to Harvard's CS50P course.
 
-> **Course**: CS50's Introduction to Programming with Python  
-> **Institution**: Harvard University / edX  
-> **Link**: https://cs50.harvard.edu/python  
+> **Course**: CS50's Introduction to Programming with Python
+> 
+> **Institution**: Harvard University / edX
+> 
+> **Language**: Python
+> 
+> **Link**: https://cs50.harvard.edu/python
+> 
 > **Status**: 🔄 In progress
 
 Each folder corresponds to one week of the course.
