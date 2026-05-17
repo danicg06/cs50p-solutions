@@ -17,3 +17,10 @@ The detailed problem statements and implementation notes can be found inside the
 To run any of the scripts, navigate to this directory and execute:
 ```bash
 python script_name.py
+```
+## 📂 Files
+* `bank.py` — greeting-based payment amount.
+* `deep.py` — the answer to the Great Question of Life (42).
+* `extensions.py` — file name to media type conversion.
+* `interpreter.py` — "x op y" mathematical calculation.
+* `meal.py` — time of day to meal name conversion.
