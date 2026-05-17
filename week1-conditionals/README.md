@@ -1,4 +1,4 @@
-# Week 1 — Conditionals
+# Week 1 — Conditionals ❓
 
 This folder contains a collection of programming exercises from Week 1 of CS50's Introduction to Programming with Python. 
 
