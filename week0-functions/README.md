@@ -18,3 +18,9 @@ To run any of the scripts, navigate to the corresponding directory and execute:
 ```bash
 python script_name.py
 ```
+## 📂 Files
+* `einstein.py` — energy calculation from mass input.
+* `faces.py` — ":)" and ":("  to 🙂 and 🙁 conversion.
+* `indoor.py` — input text to lowercase conversion.
+* `playback.py` — " " to "..." replacement.
+* `tip.py` — tip calculation from meal cost and percentage.

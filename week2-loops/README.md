@@ -17,3 +17,11 @@ The detailed problem statements and implementation notes can be found inside the
 To run any of the scripts, navigate to this directory and execute:
 ```bash
 python script_name.py
+```
+## 📂 Files
+* `camel.py` — camelCase to snake_case conversion.
+* `coke.py` — amont due and change calculation for a coke machine.
+* `nutrition.py` — fruit calorie lookup using a dict.
+* `plates.py` — validation of a vanity plate's requirements.
+* `twttr.py` — ommiting the input text vowels.
+

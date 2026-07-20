@@ -2,8 +2,7 @@
 indoor.py - Text to lowercase converter (referred to indoor voice).
 
 This module implements a solution for the "indoor" problem of the CS50,
-which converts to lowercase an input requested to the user, returning it
-in lowercase. Whitespaces and punctuation should not be changed.
+which converts to lowercase an input requested to the user. Whitespaces and punctuation should not be changed.
 
 Author:
     Daniel Casasola Guerrero <danicg06>
