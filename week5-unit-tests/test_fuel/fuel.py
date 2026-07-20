@@ -20,7 +20,6 @@ Example:
      FUEL GAUGE
     ------------
 
-    Fraction: p/q
     Fraction: 1/3
     33%
 
@@ -51,51 +50,56 @@ def print_header(header):
     """
     print(header)
 
-def get_fuel(PROMPT):
+def convert(fraction):
     """
-    Prompts the user until a valid fraction is entered and then calculates the
-    corresponding percentage of fuel remaining in the tank.
+    Returns the rounded fraction of the received string formatted as X/Y.
+
+    If it is a division by zero or X > Y or one of them is not an integer,
+    then the corresponding error is returned.
+
+    Arguments:
+    fraction - string formatted as X/Y
+
+    Return value:
+    The corresponding and rounded percentage.
+    """
+
+    # removes the leading and trailing whitespaces from the input.
+    fraction = fraction.strip()
+
+    # makes a list of two elements: the dividend and divisor.
+    X, Y = fraction.split("/")
+
+    X = int(X)
+    Y = int(Y)
+
+    if (Y == 0):
+        raise ZeroDivisionError
+    elif X > Y or (X/Y < 0):
+        raise ValueError
+    else:
+        return round((X/Y)*100)
+
+def gauge(percentage):
+    """
     Outputs "E" if 1% or less of fuel remains, or "F" if 99% or more of fuel remains
     in the tank.
 
     Arguments:
-    PROMPT - global constant string of the corresponding prompt.
+    percentage - percentage calculated from the input fraction.
 
     Return value:
     output - string of the corresponding fuel percentage remaining.
     """
 
-    # prompts the user until a valid fraction is entered.
-    while True:
-        try:
-            fraction = input(PROMPT)
+    if percentage <= 1: # empty tank
+        output = "E"
+    elif percentage >= 99: # full tank
+        output = "F"
+    else:
+        output = f"{percentage}%"
 
-            # removes the leading and trailing whitespaces from the input.
-            fraction = fraction.strip()
-
-            # makes a list of two elements: the dividend and divisor.
-            X, Y = fraction.split("/")
-
-            X = int(X)
-            Y = int(Y)
-
-            neg_fraction = (X/Y < 0)
-            # if X > Y or the fraction is negative, then prompt the user again.
-            if X <= Y and not neg_fraction:
-                # calculates the fuel percentage.
-                fuel = round((X/Y)*100)
-
-                if fuel <= 1: # empty tank
-                    output = "E"
-                elif fuel >= 99: # full tank
-                    output = "F"
-                else:
-                    output = f"{fuel}%"
-
-                return output
-
-        except (ValueError, ZeroDivisionError):
-            pass
+    return output
 
 
 # ============================================================================
@@ -106,8 +110,14 @@ def main():
     # Print header
     print_header(HEADER)
 
-    # INPUT and calculates the corresponding fuel
-    output = get_fuel(PROMPT)
+    # INPUT of the corresponding fraction
+    fraction = input(PROMPT)
+
+    # Converts the fraction in a percentage
+    percentage = convert(fraction)
+
+    # Returns the correct string corresponding to the percentage
+    output = gauge(PROMPT)
 
     # OUTPUT
     print(f"{output}")
