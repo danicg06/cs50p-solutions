@@ -18,3 +18,10 @@ The detailed problem statements and implementation notes can be found inside the
 To run any of the scripts, navigate to this directory and execute:
 ```bash
 python script_name.py
+```
+
+## 📂 Files
+* `lines.py` — counts the number of lines of code in a Python file, excluding comments and blank lines.
+* `pizza.py` — pretty-prints a CSV file containing menu data into a structured ASCII table using tabulate.
+* `shirt.py` — overlays a transparent image of CS50 shirt graphics onto input photos using Pillow.
+* `scourgify.py` — cleans up CSV files by splitting full names into separate first and last name columns.
